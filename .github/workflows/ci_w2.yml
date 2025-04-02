@@ -44,7 +44,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r githubAction_docker/requirements/test_requirements.txt
     - name: Test with pytest
-      run: pytest/githubAction_docker
+      run: pytest githubAction_docker
 
   build:
     needs: [train, test]
