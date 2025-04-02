@@ -1,7 +1,0 @@
-pyproject.toml
-setup.py
-titanic_model.egg-info/PKG-INFO
-titanic_model.egg-info/SOURCES.txt
-titanic_model.egg-info/dependency_links.txt
-titanic_model.egg-info/requires.txt
-titanic_model.egg-info/top_level.txt
