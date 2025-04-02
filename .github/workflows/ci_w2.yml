@@ -44,7 +44,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r githubAction_docker/requirements/test_requirements.txt
     - name: Test with pytest
-      run: pytest
+      run: pytest/githubAction_docker
 
   build:
     needs: [train, test]
@@ -64,7 +64,7 @@ jobs:
     - name: Install dependencies
       run: pip install --upgrade build
     - name: Build package
-      run: python -m build
+      run: python -m build githubAction_docker
     - uses: actions/upload-artifact@v4
       with:
         name: my-build-package

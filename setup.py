@@ -26,8 +26,8 @@ ROOT_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = ROOT_DIR / 'githubAction_docker'
 print(f"Printing root directory: {ROOT_DIR}")
 print(f"Printing project directory: {PROJECT_DIR}")
-REQUIREMENTS_DIR = ROOT_DIR / 'requirements'
-PACKAGE_DIR = ROOT_DIR / 'titanic_model'
+REQUIREMENTS_DIR = PROJECT_DIR / 'requirements'
+PACKAGE_DIR = PROJECT_DIR / 'titanic_model'
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
